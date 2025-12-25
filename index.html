@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Võ Tiến Phát Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>Võ Tiến Phát</span>
+        </div>
+
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-delay="100">
+                <a href="#home">Trang Chủ</a>
+            </div>
+            <div class="link" data-aos="fade-up" data-aos-delay="200">
+                <a href="#about">Về Tôi</a>
+            </div>
+            <div class="link" data-aos="fade-up" data-aos-delay="500">
+                <a href="#">Blogs</a>
+            </div>
+            <div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
+                <a href="#">Liên Hệ Tôi</a>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <div class="dropdown">
+        <div class="links">
+            <a href="#home">Trang Chủ</a>
+            <a href="#about">Về Tôi</a>
+            <a href="#">Blogs</a>
+            <a href="#">Liên Hệ</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO / HOME SECTION -->
+<section id="home">
+    <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+            <img src="main.png" alt="">
+        </div>
+
+        <div class="content">
+            <h1 data-aos="fade-left" data-aos-delay="800">
+                <span>Võ Tiến Phát</span>
+            </h1>
+
+            <div class="typewriter" data-aos="fade-right" data-aos-delay="900">
+                Kỹ Sư <span></span>
+            </div>
+
+            <p data-aos="flip-up" data-aos-delay="1000">
+                Đam mê nghiên cứu và phát triển các hệ thống mạng máy tính cho ứng dụng thực tế.
+                Tập trung vào thiết kế hạ tầng mạng ổn định, tối ưu hiệu năng truyền thông và
+                đảm bảo an toàn thông tin, hướng tới các giải pháp mạng hiệu quả và có khả năng mở rộng.
+            </p>
+
+            <div class="social-links" data-aos="flip-down" data-aos-delay="1200">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+            <div class="btn" data-aos="zoom-out-left" data-aos-delay="1300">
+                <button>Download CV</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <div class="about-container" data-aos="fade-up">
+        <h2>Về Tôi</h2>
+
+        <p>
+            Tôi là sinh viên chuyên ngành <b>Mạng Máy Tính</b>, định hướng phát triển
+            trong lĩnh vực thiết kế, triển khai và bảo mật hệ thống mạng.
+        </p>
+
+        <p>
+            Tôi tập trung nghiên cứu các công nghệ như <b>Network Security</b>,
+            <b>Docker</b>, <b>Cloud Computing</b> và phân tích lưu lượng mạng nhằm
+            xây dựng các hệ thống ổn định, an toàn và có khả năng mở rộng.
+        </p>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ offset: 0 });
+
+    function hamburg() {
+        document.querySelector(".dropdown").style.transform = "translateY(0)";
+    }
+
+    function cancel() {
+        document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+</script>
+
+</body>
+</html>
