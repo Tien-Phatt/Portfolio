@@ -955,5 +955,135 @@ nav{
   font-size: 1rem;
   line-height: 1.8;
 }
+/* ================= BLOG PAGE ================= */
+
+/* ===== BLOG PAGE ===== */
+
+.blog-page {
+  padding: 120px 8%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b0b0b 0%, #111 100%);
+  color: #fff;
+}
+
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.blog-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.blog-header p {
+  color: #bbb;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 12px auto 0;
+}
+
+
+/* GRID */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.blog-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: 0.35s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.blog-card-body {
+  padding: 25px;
+}
+
+/* CATEGORY */
+.blog-category {
+  display: inline-block;
+  background: #222;
+  color: #00ffd5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.blog-title {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.blog-title a {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.blog-title a:hover {
+  color: #00ffd5;
+}
+
+/* DATE */
+.blog-date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+/* EXCERPT */
+.blog-excerpt {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* READ MORE */
+.read-more {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 100px 6%;
+  }
+
+  .blog-header h1 {
+    font-size: 2.3rem;
+  }
+}
+[data-aos] {
+  will-change: transform, opacity;
+}
+
+
 
 
