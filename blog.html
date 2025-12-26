@@ -3,12 +3,37 @@ layout: default
 title: Blog
 ---
 
-<h1>Blog Lập Trình</h1>
+<section class="blog-container">
+  <h1 class="blog-title">Blog Lập Trình</h1>
+  <p class="blog-subtitle">
+    Chia sẻ kiến thức về Java, JavaScript và phát triển phần mềm
+  </p>
 
-{% for post in site.posts %}
-  <div>
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.excerpt }}</p>
-    <a href="{{ post.url }}">Đọc tiếp →</a>
+  <div class="blog-grid">
+    {% for post in site.posts %}
+    <article class="blog-card">
+      <div class="blog-card-content">
+        <span class="blog-category">
+          {{ post.categories | first }}
+        </span>
+
+        <h2 class="blog-post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+
+        <p class="blog-date">
+          {{ post.date | date: "%d/%m/%Y" }}
+        </p>
+
+        <p class="blog-excerpt">
+          {{ post.excerpt | strip_html | truncate: 120 }}
+        </p>
+
+        <a class="read-more" href="{{ post.url }}">
+          Đọc tiếp →
+        </a>
+      </div>
+    </article>
+    {% endfor %}
   </div>
-{% endfor %}
+</section>
