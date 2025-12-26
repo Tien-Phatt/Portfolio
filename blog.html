@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<section class="blog-page">
+<section>
   <div class="blog-header">
     <h1>Blog Lập Trình</h1>
     <p>Chia sẻ kiến thức Java & JavaScript theo cách dễ hiểu</p>
@@ -13,29 +13,28 @@ title: Blog
     {% for post in site.posts %}
     <article class="blog-card">
 
-      <div class="blog-card-body">
-        <span class="blog-category">
-          {{ post.category | default: "Programming" }}
-        </span>
+      <span class="blog-category">
+        {{ post.category | default: "Programming" }}
+      </span>
 
-        <h2 class="blog-title">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </h2>
-
-        <p class="blog-date">
-          {{ post.date | date: "%d/%m/%Y" }}
-        </p>
-
-        <p class="blog-excerpt">
-          {{ post.excerpt | strip_html | truncate: 140 }}
-        </p>
-
-        <a class="read-more" href="{{ post.url | relative_url }}">
-          Đọc tiếp →
+      <h2 class="blog-title">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
         </a>
+      </h2>
+
+      <div class="blog-date">
+        {{ post.date | date: "%d/%m/%Y" }}
       </div>
+
+      <p class="blog-excerpt">
+        {{ post.excerpt | strip_html | truncate: 140 }}
+      </p>
+
+      <a class="read-more" href="{{ post.url | relative_url }}">
+        Đọc tiếp →
+      </a>
+
     </article>
     {% endfor %}
   </div>

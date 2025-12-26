@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=2025">
 </head>
 <body>
 
   <nav>
-    <a href="index.html">Trang chủ</a>
-    <a href="blog.html">Blog</a>
+    <div class="nav-container">
+      <div class="logo">
+        <span>Portfolio</span>
+      </div>
+
+      <div class="links">
+        <div class="link"><a href="/index.html">Trang chủ</a></div>
+        <div class="link"><a href="/blog.html">Blog</a></div>
+      </div>
+    </div>
   </nav>
 
-  <main>
+  <main class="blog-page">
     {{ content }}
   </main>
 
 </body>
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 </html>
