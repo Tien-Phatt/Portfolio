@@ -1,7 +1,11 @@
 title: Võ Tiến Phát Blog
 description: Blog chia sẻ kiến thức Java & JavaScript
-baseurl: ""
+author: Võ Tiến Phát
+
+baseurl: "/Portfolio"
 url: "https://tien-phatt.github.io"
 
 markdown: kramdown
-theme: minima
+theme: null
+
+permalink: /blog/:title/
