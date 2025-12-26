@@ -299,118 +299,6 @@ nav {
     color: #38bdf8;
 }
 
-/* =====================
-   BLOG SECTION
-===================== */
-/* =====================
-   BLOG SECTION (IMPROVED)
-===================== */
-.blog {
-    padding: 100px 20px;
-    background: linear-gradient(180deg, #020617, #0f172a);
-}
-
-.blog-container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.blog h2 {
-    text-align: center;
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.blog-desc {
-    text-align: center;
-    color: #94a3b8;
-    font-size: 16px;
-    max-width: 520px;
-    margin: 0 auto 50px;
-}
-
-/* BLOG GRID */
-.blog-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 32px;
-}
-
-/* BLOG CARD */
-.blog-card {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: 0.35s ease;
-}
-
-.blog-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    background: linear-gradient(
-        120deg,
-        transparent 60%,
-        rgba(56,189,248,0.15)
-    );
-    opacity: 0;
-    transition: 0.35s;
-}
-
-.blog-card:hover::before {
-    opacity: 1;
-}
-
-.blog-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 255, 255, 0.15);
-}
-
-/* TEXT */
-.blog-text h3 {
-    font-size: 19px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.blog-text h3 a {
-    color: #e5e7eb;
-    text-decoration: none;
-}
-
-.blog-text h3 a:hover {
-    color: #38bdf8;
-}
-
-.blog-text p {
-    font-size: 14.5px;
-    color: #94a3b8;
-    line-height: 1.6;
-}
-
-/* META */
-.blog-meta {
-    font-size: 13px;
-    color: #64748b;
-    margin-bottom: 12px;
-}
-
-/* READ MORE */
-.read-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 14px;
-    font-weight: 600;
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-.read-more:hover {
-    gap: 10px;
-}
 
 
 /* =====================
@@ -547,120 +435,7 @@ nav {
 /* ===== BLOG PAGE ===== */
 /* ===== BLOG PAGE ===== */
 
-.blog-page {
-  padding: 120px 8%;
-  min-height: 100vh;
-  background: linear-gradient(180deg, #0b0b0b 0%, #111 100%);
-  color: #fff;
-}
-.blog-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 
-.blog-header p {
-  color: #bbb;
-  font-size: 1.05rem;
-  max-width: 600px;
-  margin: 12px auto 0;
-}
-
-.blog-container {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.blog-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-.blog-title a {
-  font-size: 1.35rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.blog-excerpt {
-  font-size: 0.95rem;
-  color: #ccc;
-  line-height: 1.6;
-}
-
-.blog-subtitle {
-  text-align: center;
-  color: #777;
-  margin-bottom: 50px;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.blog-card {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.blog-card-content {
-  padding: 25px;
-}
-
-.blog-category {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: #000;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.blog-post-title {
-  font-size: 1.3rem;
-  margin: 10px 0;
-}
-
-.blog-post-title a {
-  text-decoration: none;
-  color: #111;
-}
-
-.blog-post-title a:hover {
-  text-decoration: underline;
-}
-
-.blog-date {
-  font-size: 0.85rem;
-  color: #999;
-  margin-bottom: 15px;
-}
-
-.blog-excerpt {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.6;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #000;
-}
 /* ===== POST PAGE ===== */
 
 .post-container {
@@ -685,92 +460,6 @@ nav {
 }
 /* ================= BLOG PAGE ================= */
 
-.blog-page {
-  padding: 120px 8%;
-  min-height: 100vh;
-  background: #0f0f0f;
-}
-
-.blog-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.blog-header h1 {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.blog-header p {
-  color: #aaa;
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
-/* GRID */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-/* CARD */
-.blog-card {
-  background: #151515;
-  border-radius: 18px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  border: 1px solid #222;
-}
-
-.blog-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-}
-
-.blog-card-body {
-  padding: 25px;
-}
-
-/* CATEGORY */
-.blog-category {
-  display: inline-block;
-  background: #222;
-  color: #00ffd5;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  margin-bottom: 12px;
-}
-
-/* TITLE */
-.blog-title {
-  font-size: 1.4rem;
-  margin: 10px 0;
-}
-
-.blog-title a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.blog-title a:hover {
-  color: #00ffd5;
-}
-
-/* DATE */
-.blog-date {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 12px;
-}
-
-/* EXCERPT */
-.blog-excerpt {
-  color: #ccc;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
 
 /* READ MORE */
 .read-more {
@@ -813,15 +502,29 @@ nav {
 [data-aos] {
   will-change: transform, opacity;
 }
-/* =====================
-   BLOG PAGE (PORTFOLIO STYLE)
-===================== */
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .blog-header h1 {
+        font-size: 32px;
+    }
+
+    .blog-grid {
+        gap: 24px;
+    }
+}
+/* =====================================================
+   BLOG PAGE – PORTFOLIO (FINAL – CLEAN VERSION)
+===================================================== */
 
 .blog-page {
     padding: 120px 20px 80px;
+    min-height: 100vh;
     background: linear-gradient(180deg, #020617, #0f172a);
 }
 
+/* ---------- HEADER ---------- */
 .blog-header {
     max-width: 720px;
     margin: 0 auto 60px;
@@ -832,6 +535,7 @@ nav {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 12px;
+    color: #e5e7eb;
 }
 
 .blog-header p {
@@ -839,7 +543,7 @@ nav {
     color: #94a3b8;
 }
 
-/* GRID */
+/* ---------- GRID ---------- */
 .blog-grid {
     max-width: 1200px;
     margin: auto;
@@ -848,12 +552,14 @@ nav {
     gap: 32px;
 }
 
-/* CARD */
+/* ---------- CARD ---------- */
 .blog-card {
     background: #020617;
     border-radius: 18px;
+    padding: 26px;
+    border: 1px solid rgba(255,255,255,0.06);
     box-shadow: 0 20px 45px rgba(0,0,0,0.45);
-    transition: 0.35s ease;
+    transition: transform 0.35s ease, border-color 0.35s ease;
     position: relative;
     overflow: hidden;
 }
@@ -868,7 +574,7 @@ nav {
         rgba(56,189,248,0.18)
     );
     opacity: 0;
-    transition: 0.35s;
+    transition: opacity 0.35s ease;
 }
 
 .blog-card:hover::before {
@@ -876,14 +582,11 @@ nav {
 }
 
 .blog-card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
+    border-color: rgba(56,189,248,0.35);
 }
 
-.blog-card-body {
-    padding: 26px;
-}
-
-/* CATEGORY */
+/* ---------- CATEGORY ---------- */
 .blog-category {
     display: inline-block;
     font-size: 12px;
@@ -895,37 +598,38 @@ nav {
     margin-bottom: 14px;
 }
 
-/* TITLE */
+/* ---------- TITLE ---------- */
 .blog-title {
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .blog-title a {
     color: #e5e7eb;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .blog-title a:hover {
     color: #38bdf8;
 }
 
-/* DATE */
+/* ---------- META ---------- */
 .blog-date {
     font-size: 13px;
     color: #64748b;
     margin-bottom: 14px;
 }
 
-/* EXCERPT */
+/* ---------- EXCERPT ---------- */
 .blog-excerpt {
     font-size: 14.5px;
     color: #94a3b8;
     line-height: 1.6;
 }
 
-/* READ MORE */
+/* ---------- READ MORE ---------- */
 .read-more {
     display: inline-flex;
     align-items: center;
@@ -934,14 +638,14 @@ nav {
     font-weight: 600;
     color: #38bdf8;
     text-decoration: none;
-    transition: 0.3s;
+    transition: gap 0.3s;
 }
 
 .read-more:hover {
     gap: 12px;
 }
 
-/* RESPONSIVE */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 600px) {
     .blog-header h1 {
         font-size: 32px;
@@ -951,4 +655,5 @@ nav {
         gap: 24px;
     }
 }
+
 
