@@ -32,7 +32,7 @@
                 <a href="#about">Về Tôi</a>
             </div>
             <div class="link" data-aos="fade-up" data-aos-delay="500">
-                <a href="{{ site.baseurl }}/blog/">Blogs</a>
+                <a href="{{ site.baseurl }}/blog.html" class="page-link">Blogs</a>
             </div>
             <div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
                 <a href="#">Liên Hệ Tôi</a>
@@ -46,7 +46,7 @@
         <div class="links">
             <a href="#home">Trang Chủ</a>
             <a href="#about">Về Tôi</a>
-            <a href="{{ site.baseurl }}/blog/">Blogs</a>
+            <a href="{{ site.baseurl }}/blog.html" class="page-link">Blogs</a>
             <a href="#">Liên Hệ</a>
             <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
         </div>
@@ -321,6 +321,20 @@
 });
 </script>
 
+<script>
+  document.querySelectorAll(".page-link").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = this.href;
+
+      document.body.classList.add("fade-out");
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 500); // khớp với CSS transition
+    });
+  });
+</script>
 
 </body>
 </html>
