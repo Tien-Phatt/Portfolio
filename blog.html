@@ -3,11 +3,12 @@ layout: default
 title: Blog
 ---
 
-<section>
-  <div class="blog-header">
+<section class="blog-page">
+
+  <header class="blog-header">
     <h1>Blog Lập Trình</h1>
-    <p>Chia sẻ kiến thức Java & JavaScript theo cách dễ hiểu</p>
-  </div>
+    <p>Chia sẻ kiến thức Java & JavaScript</p>
+  </header>
 
   <div class="blog-grid">
     {% for post in site.posts %}
@@ -23,9 +24,9 @@ title: Blog
         </a>
       </h2>
 
-      <div class="blog-date">
+      <p class="blog-date">
         {{ post.date | date: "%d/%m/%Y" }}
-      </div>
+      </p>
 
       <p class="blog-excerpt">
         {{ post.excerpt | strip_html | truncate: 140 }}
@@ -38,4 +39,5 @@ title: Blog
     </article>
     {% endfor %}
   </div>
+
 </section>
