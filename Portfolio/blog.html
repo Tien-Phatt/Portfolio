@@ -3,12 +3,15 @@ layout: default
 title: Blog
 ---
 
-<h1>Blog Lập Trình</h1>
+<h1>📚 Blog Lập Trình</h1>
 
-{% for post in site.posts %}
-  <div>
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.excerpt }}</p>
-    <a href="{{ post.url }}">Đọc tiếp →</a>
-  </div>
-{% endfor %}
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+      <span>({{ post.date | date: "%d/%m/%Y" }})</span>
+    </li>
+  {% endfor %}
+</ul>

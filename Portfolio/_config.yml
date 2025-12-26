@@ -1,7 +1,15 @@
 title: Võ Tiến Phát Blog
-description: Blog lập trình Java & JavaScript
-baseurl: ""
+email: tienphat22704@gmail.com
+description: >
+  Blog chia sẻ kiến thức lập trình Java & JavaScript,
+  tập trung vào nền tảng, tư duy và ứng dụng thực tế.
+baseurl: "/Portfolio"
 url: "https://tien-phatt.github.io"
 
 markdown: kramdown
 theme: minima
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed
