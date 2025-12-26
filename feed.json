@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Tiến Phát Blog",
+    "description": "",
+    "home_page_url": "https://tien-phatt.github.io/Portfolio/blog",
+    "feed_url": "https://tien-phatt.github.io/Portfolio/blog/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Tiến Phát Blog"
+    },
+    "items": [
+        {
+            "id": "https://tien-phatt.github.io/Portfolio/blog/java-la-gi-tong-quan-ve-ngon-ngu-java-va-ung-dung-thuc-te.html",
+            "url": "https://tien-phatt.github.io/Portfolio/blog/java-la-gi-tong-quan-ve-ngon-ngu-java-va-ung-dung-thuc-te.html",
+            "title": "Java là gì? Tổng quan về ngôn ngữ Java và ứng dụng thực tế.",
+            "summary": "Java là một ngôn ngữ lập trình hướng đối tượng (OOP) được phát triển bởi Sun Microsystems (nay thuộc Oracle). Java nổi tiếng với triết lý “Write Once, Run Anywhere”, cho phép chương trình chạy trên nhiều hệ điều hành khác nhau mà không cần&hellip;",
+            "content_html": "<p data-start=\"358\" data-end=\"625\"><strong data-start=\"358\" data-end=\"366\">Java</strong> là một ngôn ngữ lập trình hướng đối tượng (OOP) được phát triển bởi Sun Microsystems (nay thuộc Oracle). Java nổi tiếng với triết lý <strong data-start=\"500\" data-end=\"530\">“Write Once, Run Anywhere”</strong>, cho phép chương trình chạy trên nhiều hệ điều hành khác nhau mà không cần chỉnh sửa mã nguồn.</p>\n<p data-start=\"627\" data-end=\"660\">Java được sử dụng rộng rãi trong:</p>\n<ul data-start=\"661\" data-end=\"766\">\n<li data-start=\"661\" data-end=\"695\">\n<p data-start=\"663\" data-end=\"695\">Phát triển ứng dụng doanh nghiệp</p>\n</li>\n<li data-start=\"696\" data-end=\"715\">\n<p data-start=\"698\" data-end=\"715\">Lập trình backend</p>\n</li>\n<li data-start=\"716\" data-end=\"734\">\n<p data-start=\"718\" data-end=\"734\">Ứng dụng Android</p>\n</li>\n<li data-start=\"735\" data-end=\"766\">\n<p data-start=\"737\" data-end=\"766\">Hệ thống ngân hàng, tài chính</p>\n</li>\n</ul>\n<p data-start=\"768\" data-end=\"796\">Ưu điểm nổi bật của Java là:</p>\n<ul data-start=\"797\" data-end=\"860\">\n<li data-start=\"797\" data-end=\"810\">\n<p data-start=\"799\" data-end=\"810\">Bảo mật cao</p>\n</li>\n<li data-start=\"811\" data-end=\"831\">\n<p data-start=\"813\" data-end=\"831\">Thư viện phong phú</p>\n</li>\n<li data-start=\"832\" data-end=\"847\">\n<p data-start=\"834\" data-end=\"847\">Cộng đồng lớn</p>\n</li>\n<li data-start=\"848\" data-end=\"860\">\n<p data-start=\"850\" data-end=\"860\">Dễ bảo trì</p>\n</li>\n</ul>\n<p data-start=\"862\" data-end=\"954\"> Java là lựa chọn rất tốt cho những ai muốn theo hướng <strong data-start=\"919\" data-end=\"953\">backend hoặc enterprise system</strong>.</p>",
+            "author": {
+                "name": "Tiến Phát Blog"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-12-27T04:35:42+07:00",
+            "date_modified": "2025-12-27T04:35:42+07:00"
+        }
+    ]
+}

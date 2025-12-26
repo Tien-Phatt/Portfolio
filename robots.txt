@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tien-phatt.github.io/Portfolio/blog/sitemap.xml
