@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Võ Tiến Phát Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="music-container">
+    <button id="music-toggle" class="music-btn" title="Đang phát: Em Còn Nhớ Anh Không? - Hoàng Tôn">
+        <i class="fa-solid fa-music"></i>
+    </button>
+    <audio id="myAudio" loop>
+        <source src="now-or-never.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>Võ Tiến Phát</span>
+        </div>
+
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-delay="100">
+                <a href="#home">Trang Chủ</a>
+            </div>
+            <div class="link" data-aos="fade-up" data-aos-delay="200">
+                <a href="#about">Về Tôi</a>
+            </div>
+            <div class="link" data-aos="fade-up" data-aos-delay="500">
+                <a href="#blog">Blogs</a>
+            </div>
+            <div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
+                <a href="#">Liên Hệ Tôi</a>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <div class="dropdown">
+        <div class="links">
+            <a href="#home">Trang Chủ</a>
+            <a href="#about">Về Tôi</a>
+            <a href="#blog">Blogs</a>
+            <a href="#">Liên Hệ</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO / HOME SECTION -->
+<section id="home">
+    <div class="hero-bg"></div>
+    <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+            <img src="main.png" alt="">
+        </div>
+
+        <div class="content">
+            <h1 data-aos="fade-left" data-aos-delay="800">
+                <span>Võ Tiến Phát</span>
+            </h1>
+
+            <div class="typewriter" data-aos="fade-right" data-aos-delay="900">
+                Kỹ Sư Mạng Máy Tính <span></span>
+            </div>
+
+            <p data-aos="flip-up" data-aos-delay="1000">
+                Đam mê nghiên cứu và phát triển các hệ thống mạng máy tính cho ứng dụng thực tế.
+                Tập trung vào thiết kế hạ tầng mạng ổn định, tối ưu hiệu năng truyền thông và
+                đảm bảo an toàn thông tin, hướng tới các giải pháp mạng hiệu quả và có khả năng mở rộng.
+            </p>
+
+            <div class="social-links" data-aos="flip-down" data-aos-delay="1200">
+                <a href="https://github.com/Tien-Phatt" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.facebook.com/TienPhat.22.07.04/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@_venus.s_" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://discord.gg/zr7GYwDgsY" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+
+            <div class="btn" data-aos="zoom-out-left" data-aos-delay="1300">
+                <button>Download CV</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <div class="about-wrapper">
+
+        <h2 data-aos="fade-up">Về Tôi</h2>
+
+        <div class="about-grid">
+
+            <!-- ===== CONTACT INFO ===== -->
+            <div class="about-box" data-aos="fade-up" data-aos-delay="100">
+                <h3>Thông Tin Liên Hệ</h3>
+
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-user"></i> 
+                        <strong>Họ tên: </strong> Võ Tiến Phát
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> 
+                        <strong>SĐT: </strong> <a href="tel:0865634037">0865 634 037</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i> 
+                        <strong>Email: </strong> <a href="mailto:tienphat22704@gmail.com">tienphat22704@gmail.com</a>
+                        </li>
+                            <li>
+                     <i class="fa-solid fa-location-dot"></i> 
+                            <strong>Địa chỉ: </strong> Gò Vấp , TP. Hồ Chí Minh
+    </li>
+</ul>
+
+                <div class="contact-social">
+                    <a href="https://github.com/Tien-Phatt" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/TienPhat.22.07.04/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://discord.gg/zr7GYwDgsY" target="_blank" title="Discord">
+                        <i class="fa-brands fa-discord"></i>
+        </a>
+                </div>
+            </div>
+
+            <!-- ===== EDUCATION ===== -->
+            <div class="about-box" data-aos="fade-up" data-aos-delay="200">
+    <h3>Học Vấn</h3>
+
+    <div class="edu-item">
+        <div class="edu-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="edu-text">
+            <p><strong>Trường:</strong> HUTECH University</p>
+            <p><strong>Chuyên ngành:</strong> Mạng Máy Tính</p>
+        </div>
+    </div>
+
+    <div class="edu-desc">
+        <i class="fa-solid fa-book-open-reader"></i>
+        <p class="desc">
+            Được đào tạo bài bản về thiết kế, triển khai và vận hành hệ thống mạng,
+            tập trung vào tính ổn định, hiệu năng và bảo mật trong môi trường doanh nghiệp.
+        </p>
+    </div>
+</div>
+
+            <!-- ===== EXPERTISE ===== -->
+            <div class="about-box" data-aos="fade-up" data-aos-delay="300">
+                <h3>Chuyên Môn</h3>
+
+                <ul class="skill-list">
+                    <li>Thiết kế & triển khai hệ thống mạng LAN / WAN</li>
+                    <li>Cấu hình Router, Switch (VLAN, Routing, NAT)</li>
+                    <li>Network Security: Firewall, VPN, IDS/IPS</li>
+                    <li>Phân tích lưu lượng mạng với Wireshark</li>
+                    <li>Triển khai dịch vụ bằng Docker & Container</li>
+                    <li>Nền tảng Cloud cơ bản (AWS / Azure)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="blog" class="blog">
+    <div class="blog-container">
+
+        <h2 data-aos="fade-up">Blog Lập Trình</h2>
+        <p class="blog-desc" data-aos="fade-up" data-aos-delay="100">
+            Chia sẻ kiến thức, kinh nghiệm và mẹo lập trình về Java và JavaScript.
+        </p>
+
+        <div class="blog-list">
+
+            <!-- ========= BLOG POST 1 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="150">
+                <img src="blog1.jpg" alt="Java là gì?" class="blog-img">
+                <div class="blog-text">
+                    <h3>Java là gì? Khái niệm và ứng dụng thực tế</h3>
+                    <p>Giới thiệu tổng quan về ngôn ngữ Java, tính chất OOP, ứng dụng trong doanh nghiệp và mobile.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 2 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="blog2.jpg" alt="OOP trong Java" class="blog-img">
+                <div class="blog-text">
+                    <h3>OOP trong Java: Lớp, đối tượng & kế thừa</h3>
+                    <p>Giải thích các khái niệm OOP cơ bản cùng ví dụ mã Java tiêu chuẩn.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 3 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="250">
+                <img src="blog3.jpg" alt="JVM hoạt động" class="blog-img">
+                <div class="blog-text">
+                    <h3>JVM, JRE & JDK: Hoạt động như thế nào?</h3>
+                    <p>Phân biệt JVM, JRE và JDK để hiểu kiến trúc chạy chương trình Java.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 4 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="blog4.jpg" alt="JavaScript là gì?" class="blog-img">
+                <div class="blog-text">
+                    <h3>JavaScript là gì? Vai trò trong Web hiện đại</h3>
+                    <p>Giải thích mục đích sử dụng và tính năng đặc trưng của JavaScript.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 5 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="350">
+                <img src="blog5.jpg" alt="So sánh Java và JS" class="blog-img">
+                <div class="blog-text">
+                    <h3>So sánh Java và JavaScript</h3>
+                    <p>Phân tích sự khác nhau về cú pháp, mục đích và môi trường chạy.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 6 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="blog6.jpg" alt="Biến & kiểu trong JS" class="blog-img">
+                <div class="blog-text">
+                    <h3>Biến, kiểu dữ liệu và toán tử trong JavaScript</h3>
+                    <p>Tổng hợp khai báo biến và các toán tử cơ bản trong JS.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 7 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="450">
+                <img src="blog7.jpg" alt="Hàm trong JavaScript" class="blog-img">
+                <div class="blog-text">
+                    <h3>Hàm trong JavaScript: Cách viết và ứng dụng</h3>
+                    <p>Khái niệm hàm, arrow function và cách dùng trong ứng dụng thật.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 8 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="blog8.jpg" alt="Event JS" class="blog-img">
+                <div class="blog-text">
+                    <h3>Xử lý sự kiện trong JavaScript</h3>
+                    <p>Cách dùng event listener để tương tác với người dùng.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+            <!-- ========= BLOG POST 9 ========= -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="550">
+                <img src="blog9.jpg" alt="Ứng dụng Java & JS" class="blog-img">
+                <div class="blog-text">
+                    <h3>Ứng dụng Java & JavaScript trong dự án thực tế</h3>
+                    <p>Ví dụ ứng dụng Java ở backend và JavaScript ở frontend.</p>
+                    <a href="#!" class="read-more">Đọc thêm →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ offset: 0 });
+
+    function hamburg() {
+        document.querySelector(".dropdown").style.transform = "translateY(0)";
+    }
+
+    function cancel() {
+        document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+    const audio = document.getElementById("myAudio");
+    const musicBtn = document.getElementById("music-toggle");
+    const musicIcon = musicBtn.querySelector("i");
+
+// Đặt âm lượng khoảng 30% để tạo nhạc nền nhẹ nhàng
+    audio.volume = 0.3;
+
+    musicBtn.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        musicBtn.classList.add("playing");
+        musicIcon.className = "fa-solid fa-pause"; 
+    } else {
+        audio.pause();
+        musicBtn.classList.remove("playing");
+        musicIcon.className = "fa-solid fa-music";
+    }
+});
+</script>
+
+
+</body>
+</html>
