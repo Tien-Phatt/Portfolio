@@ -1,0 +1,7 @@
+title: Võ Tiến Phát Blog
+description: Blog chia sẻ kiến thức Java & JavaScript
+baseurl: ""
+url: "https://tien-phatt.github.io"
+
+markdown: kramdown
+theme: minima
