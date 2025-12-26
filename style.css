@@ -432,12 +432,6 @@ nav {
         padding: 8px;
     }
 }
-/* ===== BLOG PAGE ===== */
-/* ===== BLOG PAGE ===== */
-
-
-/* ===== POST PAGE ===== */
-
 .post-container {
   max-width: 800px;
   margin: 60px auto;
@@ -458,9 +452,6 @@ nav {
   font-size: 1rem;
   line-height: 1.8;
 }
-/* ================= BLOG PAGE ================= */
-
-
 /* READ MORE */
 .read-more {
   display: inline-block;
@@ -515,7 +506,7 @@ nav {
     }
 }
 /* =====================================================
-   BLOG PAGE – PORTFOLIO (FINAL – CLEAN VERSION)
+   BLOG PAGE – PORTFOLIO (FINAL – BUILD VERSION)
 ===================================================== */
 
 .blog-page {
@@ -655,5 +646,6 @@ nav {
         gap: 24px;
     }
 }
+
 
 
