@@ -33,17 +33,23 @@
 }
 
 /* ---------- CARD ---------- */
+/* =====================
+   BLOG CARD – FINAL
+===================== */
+
 .blog-card {
+    position: relative;
     background: #020617;
     border-radius: 18px;
     padding: 26px;
     border: 1px solid rgba(255,255,255,0.06);
     box-shadow: 0 20px 45px rgba(0,0,0,0.45);
     transition: transform 0.35s ease, border-color 0.35s ease;
-    position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
+/* overlay hover */
 .blog-card::before {
     content: "";
     position: absolute;
@@ -55,6 +61,7 @@
     );
     opacity: 0;
     transition: opacity 0.35s ease;
+    pointer-events: none; /* QUAN TRỌNG */
 }
 
 .blog-card:hover::before {
@@ -66,7 +73,17 @@
     border-color: rgba(56,189,248,0.35);
 }
 
-/* ---------- CATEGORY ---------- */
+/* =====================
+   CONTENT LAYER
+===================== */
+.blog-card * {
+    position: relative;
+    z-index: 2;
+}
+
+/* =====================
+   CATEGORY
+===================== */
 .blog-category {
     display: inline-block;
     font-size: 12px;
@@ -78,7 +95,9 @@
     margin-bottom: 14px;
 }
 
-/* ---------- TITLE ---------- */
+/* =====================
+   TITLE
+===================== */
 .blog-title {
     font-size: 20px;
     line-height: 1.4;
@@ -88,28 +107,33 @@
 .blog-title a {
     color: #e5e7eb;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .blog-title a:hover {
     color: #38bdf8;
 }
 
-/* ---------- META ---------- */
+/* =====================
+   META
+===================== */
 .blog-date {
     font-size: 13px;
     color: #64748b;
     margin-bottom: 14px;
 }
 
-/* ---------- EXCERPT ---------- */
+/* =====================
+   EXCERPT
+===================== */
 .blog-excerpt {
     font-size: 14.5px;
     color: #94a3b8;
     line-height: 1.6;
 }
 
-/* ---------- READ MORE ---------- */
+/* =====================
+   READ MORE
+===================== */
 .read-more {
     display: inline-flex;
     align-items: center;
@@ -124,6 +148,7 @@
 .read-more:hover {
     gap: 12px;
 }
+
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 600px) {
