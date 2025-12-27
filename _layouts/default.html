@@ -2,28 +2,33 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | Võ Tiến Phát</title>
 
-  <!-- CSS CHUNG -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- CSS CHÍNH -->
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 
-  <!-- CSS RIÊNG CHO BLOG -->
-  {% if page.title == "Blog" %}
-    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
-  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <script>
-    document.querySelectorAll(".blog-card").forEach(card => {
-      card.onclick = () => {
-        const link = card.querySelector("a");
-        if (link) window.location = link.href;
-      };
-    });
-  </script>
-</body>
 
-  {{ content }}
+  <!-- NAVBAR GIỮ NGUYÊN GIAO DIỆN PORTFOLIO -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <span>Võ Tiến Phát</span>
+      </div>
+
+      <div class="links">
+        <div class="link"><a href="{{ '/' | relative_url }}">Trang chủ</a></div>
+        <div class="link"><a href="{{ '/blog' | relative_url }}">Blog</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main>
+    {{ content }}
+  </main>
 
 </body>
 </html>
