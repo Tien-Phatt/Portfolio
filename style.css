@@ -646,6 +646,19 @@ nav {
         gap: 24px;
     }
 }
+.blog-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent 65%,
+        rgba(56,189,248,0.18)
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
 
 
 
