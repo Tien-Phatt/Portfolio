@@ -8,3 +8,4 @@ url: "https://tien-phatt.github.io"
 markdown: kramdown
 theme: null
 
+permalink: /blog/:title/
