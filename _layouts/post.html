@@ -3,13 +3,22 @@ layout: default
 ---
 
 <article class="post-container">
+
   <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-meta">{{ page.date | date: "%d/%m/%Y" }}</div>
+
+  <p class="post-meta">
+    {{ page.date | date: "%d/%m/%Y" }}
+    {% if page.categories %}
+      · {{ page.categories | join: ", " }}
+    {% endif %}
+  </p>
+
   <div class="post-content">
     {{ content }}
   </div>
 
-  <a href="{{ '/blog/' | relative_url }}" class="post-back">
-    ← Quay lại Blog
-  </a>
+  <div class="post-back">
+    <a href="{{ '/blog' | relative_url }}">← Quay lại Blog</a>
+  </div>
+
 </article>
